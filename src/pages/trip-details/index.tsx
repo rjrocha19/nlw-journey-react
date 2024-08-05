@@ -2,7 +2,7 @@ import { useState } from "react";
 import { CreateActiveModal } from "./create-active-modal";
 import { ImportantLinks } from "./important-links";
 import { Guests } from "./guests";
-import { Actives } from "./actives";
+import { Actives, Activities } from "./actives";
 import { DestinationAndDateHeader } from "./destination-and-date-header";
 import { Plus } from "lucide-react";
 
@@ -18,7 +18,7 @@ export function TripDetailsPage() {
   }
 
   return (
-    <div className="max-w-6xl px-6 py-10 mx-auto space-y-8">
+    <div className="max-w-6xl h-screen bg-gray-950 px-6 py-10 mx-auto space-y-8">
       <DestinationAndDateHeader />
       <main className="flex gap-16 px-6">
         <div className="flex-1 space-y-6">
@@ -33,7 +33,7 @@ export function TripDetailsPage() {
             </button>
           </div>
 
-          <Actives />
+          <Activities />
         </div>
 
         <div className="w-80 space-y-6">
